@@ -1,0 +1,2 @@
+com.mysql.jdbc.Driver=com.lianlianpay.ibatis.helper.core.constraint.MysqlConstraintServiceImpl
+oracle.jdbc.driver.OracleDriver=com.lianlianpay.ibatis.helper.core.constraint.OracleContraintServiceImpl

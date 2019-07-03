@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE ibatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Apache iBATIS Ibator Configuration 1.0//EN" "http://ibatis.apache.org/dtd/ibator-config_1_0.dtd" >    
+<ibatorConfiguration >    
+  <ibatorContext id="context1" >
+    <!--<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@//192.168.60.14:1521/server_taf2" userId="cbpaydev" password="cbpaydev" />-->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.162.154:3306/tnp_dev" userId="tnp_dev" password="tnp_dev" />
+    <javaModelGenerator targetPackage="com.tnp.bill.dao.model" targetProject="myProject" />
+    <sqlMapGenerator targetPackage="com.tnp.bill.dao.mapper" targetProject="myProject" />
+    <daoGenerator targetPackage="com.tnp.bill.dao.mapper" targetProject="myProject"  />
+    <whereDtoGenerator targetPackage="com.tnp.bill.service.request" targetProject="myProject"  />
+
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_expenses" domainObjectName="LogisticsExpenses"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_extra_charge" domainObjectName="LogisticsExtraCharge"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_sender_info" domainObjectName="LogisticsSenderInfo"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_order" domainObjectName="LogisticsOrder"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_shipping_info" domainObjectName="LogisticsShippingInfo"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_pickup_info" domainObjectName="LogisticsPickupInfo"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_application_info" domainObjectName="LogisticsApplicationInfo"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_package_info" domainObjectName="LogisticsPackageInfo"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_goodssnaps" domainObjectName="LogisticsGoodssnaps"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_trail" domainObjectName="LogisticsTrail"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_credit_account" domainObjectName="LogisticsCreditAccount"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_credit_serial" domainObjectName="LogisticsCreditSerial"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_credit_account_status_log" domainObjectName="LogisticsCreditAccountStatusLog"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_credit_change_log" domainObjectName="LogisticsCreditChangeLog"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_credit_bill" domainObjectName="LogisticsCreditBill"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_credit_repayment_record" domainObjectName="LogisticsCreditRepaymentRecord"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_enroll_happy_express" domainObjectName="EnrollHappyExpress"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_seller_logistics_supplier" domainObjectName="SellerLogisticsSupplier"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_shipper_contacts_info" domainObjectName="ShipperContactsInfo"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_recharge_logistics_credit_pay" domainObjectName="RechargeLogisticsCreditPay"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_storage" domainObjectName="Storage"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_package_receipt" domainObjectName="PackageReceipt"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_logistics_account_config" domainObjectName="LogisticsAccountConfig"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_apply_flow" domainObjectName="ApplyFlow"></table>-->
+    <!--<table schema="tnp_dev" tableName="tnp_flow_detail" domainObjectName="FlowDetail"></table>-->
+    <table schema="tnp_dev" tableName="tnp_bill_summary" domainObjectName="BillSummary"></table>
+    <modifytime column="MODIFY_TIME"></modifytime>
+    <createtime column="CREATE_TIME"></createtime>
+  </ibatorContext>
+</ibatorConfiguration>

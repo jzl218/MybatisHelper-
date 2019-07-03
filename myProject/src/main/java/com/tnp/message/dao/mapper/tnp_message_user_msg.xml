@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tnp.message.dao.mapper.MessageUserMsgMapper">
+  <resultMap id="BaseResultMap" type="com.tnp.message.dao.model.MessageUserMsg">
+      <result column="id"  property="id"  jdbcType="VARCHAR"  />
+      <result column="user_type"  property="userType"  jdbcType="VARCHAR"  />
+      <result column="user_id"  property="userId"  jdbcType="VARCHAR"  />
+      <result column="message_type"  property="messageType"  jdbcType="VARCHAR"  />
+      <result column="message_title"  property="messageTitle"  jdbcType="VARCHAR"  />
+      <result column="message_content"  property="messageContent"  jdbcType="LONGVARCHAR"  />
+      <result column="is_read"  property="isRead"  jdbcType="VARCHAR"  />
+      <result column="delivery_result"  property="deliveryResult"  jdbcType="VARCHAR"  />
+      <result column="send_time"  property="sendTime"  jdbcType="TIMESTAMP"  />
+      <result column="send_type"  property="sendType"  jdbcType="VARCHAR"  />
+      <result column="send_condition"  property="sendCondition"  jdbcType="VARCHAR"  />
+      <result column="sms_platform"  property="smsPlatform"  jdbcType="VARCHAR"  />
+      <result column="create_time"  property="createTime"  jdbcType="TIMESTAMP"  />
+      <result column="modify_time"  property="modifyTime"  jdbcType="TIMESTAMP"  />
+      <result column="channel_id"  property="channelId"  jdbcType="VARCHAR"  />
+      <result column="failure_reason"  property="failureReason"  jdbcType="VARCHAR"  />
+  </resultMap>
+
+  <sql id="baseColumns">
+      id,
+      user_type,
+      user_id,
+      message_type,
+      message_title,
+      message_content,
+      is_read,
+      delivery_result,
+      send_time,
+      send_type,
+      send_condition,
+      sms_platform,
+      create_time,
+      modify_time,
+      channel_id,
+      failure_reason
+  </sql>
+
+  <insert id="insert" parameterType="com.tnp.message.dao.model.MessageUserMsg">
+      insert into tnp_message_user_msg  (<include refid="baseColumns"/>) values
+(#{id,jdbcType=VARCHAR},#{userType,jdbcType=VARCHAR},#{userId,jdbcType=VARCHAR},#{messageType,jdbcType=VARCHAR},#{messageTitle,jdbcType=VARCHAR},#{messageContent,jdbcType=LONGVARCHAR},#{isRead,jdbcType=VARCHAR},#{deliveryResult,jdbcType=VARCHAR},#{sendTime,jdbcType=TIMESTAMP},#{sendType,jdbcType=VARCHAR},#{sendCondition,jdbcType=VARCHAR},#{smsPlatform,jdbcType=VARCHAR},sysdate(),sysdate(),#{channelId,jdbcType=VARCHAR},#{failureReason,jdbcType=VARCHAR})
+  </insert>
+
+  <select id="listByCondition" resultMap="BaseResultMap" parameterType="com.tnp.message.dao.model.MessageUserMsg">
+      select   <include refid="baseColumns"/> 
+   from tnp_message_user_msg where 1=1
+      <if test="id != null">
+  and   id = #{id,jdbcType=VARCHAR}
+      </if>
+      <if test="userType != null">
+  and   user_type = #{userType,jdbcType=VARCHAR}
+      </if>
+      <if test="userId != null">
+  and   user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+      <if test="messageType != null">
+  and   message_type = #{messageType,jdbcType=VARCHAR}
+      </if>
+      <if test="messageTitle != null">
+  and   message_title = #{messageTitle,jdbcType=VARCHAR}
+      </if>
+      <if test="messageContent != null">
+  and   message_content = #{messageContent,jdbcType=LONGVARCHAR}
+      </if>
+      <if test="isRead != null">
+  and   is_read = #{isRead,jdbcType=VARCHAR}
+      </if>
+      <if test="deliveryResult != null">
+  and   delivery_result = #{deliveryResult,jdbcType=VARCHAR}
+      </if>
+      <if test="sendTime != null">
+  and   send_time = #{sendTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="sendType != null">
+  and   send_type = #{sendType,jdbcType=VARCHAR}
+      </if>
+      <if test="sendCondition != null">
+  and   send_condition = #{sendCondition,jdbcType=VARCHAR}
+      </if>
+      <if test="smsPlatform != null">
+  and   sms_platform = #{smsPlatform,jdbcType=VARCHAR}
+      </if>
+      <if test="createTime != null">
+  and   create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="modifyTime != null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="channelId != null">
+  and   channel_id = #{channelId,jdbcType=VARCHAR}
+      </if>
+      <if test="failureReason != null">
+  and   failure_reason = #{failureReason,jdbcType=VARCHAR}
+      </if>
+  </select>
+
+  <select id="pageByCondition" resultMap="BaseResultMap" parameterType="com.tnp.message.service.request.MessageUserMsgWhereDTO">
+  select <include refid="baseColumns"/> 
+   from tnp_message_user_msg where 1=1
+      <if test="startDate != null" >
+     and <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+    and  <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+      <if test="id!= null">
+  and   id = #{id,jdbcType=VARCHAR}
+       </if>
+      <if test="userType!= null">
+  and   user_type = #{userType,jdbcType=VARCHAR}
+       </if>
+      <if test="userId!= null">
+  and   user_id = #{userId,jdbcType=VARCHAR}
+       </if>
+      <if test="messageType!= null">
+  and   message_type = #{messageType,jdbcType=VARCHAR}
+       </if>
+      <if test="messageTitle!= null">
+  and   message_title = #{messageTitle,jdbcType=VARCHAR}
+       </if>
+      <if test="messageContent!= null">
+  and   message_content = #{messageContent,jdbcType=LONGVARCHAR}
+       </if>
+      <if test="isRead!= null">
+  and   is_read = #{isRead,jdbcType=VARCHAR}
+       </if>
+      <if test="deliveryResult!= null">
+  and   delivery_result = #{deliveryResult,jdbcType=VARCHAR}
+       </if>
+      <if test="sendTime!= null">
+  and   send_time = #{sendTime,jdbcType=TIMESTAMP}
+       </if>
+      <if test="sendType!= null">
+  and   send_type = #{sendType,jdbcType=VARCHAR}
+       </if>
+      <if test="sendCondition!= null">
+  and   send_condition = #{sendCondition,jdbcType=VARCHAR}
+       </if>
+      <if test="smsPlatform!= null">
+  and   sms_platform = #{smsPlatform,jdbcType=VARCHAR}
+       </if>
+      <if test="modifyTime!= null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+       </if>
+      <if test="channelId!= null">
+  and   channel_id = #{channelId,jdbcType=VARCHAR}
+       </if>
+      <if test="failureReason!= null">
+  and   failure_reason = #{failureReason,jdbcType=VARCHAR}
+       </if>
+   limit #{offset}, #{limit} 
+  </select>
+
+  <select id="countByCondition" resultType="int" parameterType="com.tnp.message.service.request.MessageUserMsgWhereDTO">
+         select count(1)  from tnp_message_user_msg where 1=1
+      <if test="startDate != null" >
+   and   <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+  and    <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+     <if test="id != null">
+   and  id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="userType != null">
+   and  user_type = #{userType,jdbcType=VARCHAR}
+      </if>
+     <if test="userId != null">
+   and  user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+     <if test="messageType != null">
+   and  message_type = #{messageType,jdbcType=VARCHAR}
+      </if>
+     <if test="messageTitle != null">
+   and  message_title = #{messageTitle,jdbcType=VARCHAR}
+      </if>
+     <if test="messageContent != null">
+   and  message_content = #{messageContent,jdbcType=LONGVARCHAR}
+      </if>
+     <if test="isRead != null">
+   and  is_read = #{isRead,jdbcType=VARCHAR}
+      </if>
+     <if test="deliveryResult != null">
+   and  delivery_result = #{deliveryResult,jdbcType=VARCHAR}
+      </if>
+     <if test="sendTime != null">
+   and  send_time = #{sendTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="sendType != null">
+   and  send_type = #{sendType,jdbcType=VARCHAR}
+      </if>
+     <if test="sendCondition != null">
+   and  send_condition = #{sendCondition,jdbcType=VARCHAR}
+      </if>
+     <if test="smsPlatform != null">
+   and  sms_platform = #{smsPlatform,jdbcType=VARCHAR}
+      </if>
+     <if test="modifyTime != null">
+   and  modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="channelId != null">
+   and  channel_id = #{channelId,jdbcType=VARCHAR}
+      </if>
+     <if test="failureReason != null">
+   and  failure_reason = #{failureReason,jdbcType=VARCHAR}
+      </if>
+  </select>
+
+  <update id="updateByIdAndId" parameterType="com.tnp.message.dao.model.MessageUserMsg">
+      update tnp_message_user_msg  set 
+      modify_time = sysdate()
+     <if test="id != null">
+         ,id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="userType != null">
+         ,user_type = #{userType,jdbcType=VARCHAR}
+      </if>
+     <if test="userId != null">
+         ,user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+     <if test="messageType != null">
+         ,message_type = #{messageType,jdbcType=VARCHAR}
+      </if>
+     <if test="messageTitle != null">
+         ,message_title = #{messageTitle,jdbcType=VARCHAR}
+      </if>
+     <if test="messageContent != null">
+         ,message_content = #{messageContent,jdbcType=LONGVARCHAR}
+      </if>
+     <if test="isRead != null">
+         ,is_read = #{isRead,jdbcType=VARCHAR}
+      </if>
+     <if test="deliveryResult != null">
+         ,delivery_result = #{deliveryResult,jdbcType=VARCHAR}
+      </if>
+     <if test="sendTime != null">
+         ,send_time = #{sendTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="sendType != null">
+         ,send_type = #{sendType,jdbcType=VARCHAR}
+      </if>
+     <if test="sendCondition != null">
+         ,send_condition = #{sendCondition,jdbcType=VARCHAR}
+      </if>
+     <if test="smsPlatform != null">
+         ,sms_platform = #{smsPlatform,jdbcType=VARCHAR}
+      </if>
+     <if test="createTime != null">
+         ,create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="channelId != null">
+         ,channel_id = #{channelId,jdbcType=VARCHAR}
+      </if>
+     <if test="failureReason != null">
+         ,failure_reason = #{failureReason,jdbcType=VARCHAR}
+      </if>
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}
+    </update>
+
+  <delete id="deleteByIdAndId" parameterType="com.tnp.message.dao.model.MessageUserMsg">
+      delete from tnp_message_user_msg
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}  
+  </delete>
+
+  <select id="queryByIdAndId" resultMap="BaseResultMap" parameterType="com.tnp.message.dao.model.MessageUserMsg">
+      select   <include refid="baseColumns"/> from
+     tnp_message_user_msg
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}  
+  </select>
+
+</mapper>

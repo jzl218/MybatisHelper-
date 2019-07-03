@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tnp.bill.dao.mapper.BillSummaryMapper">
+  <resultMap id="BaseResultMap" type="com.tnp.bill.dao.model.BillSummary">
+      <result column="id"  property="id"  jdbcType="VARCHAR"  />
+      <result column="user_id"  property="userId"  jdbcType="VARCHAR"  />
+      <result column="balance_date"  property="balanceDate"  jdbcType="VARCHAR"  />
+      <result column="income"  property="income"  jdbcType="BIGINT"  />
+      <result column="expense"  property="expense"  jdbcType="BINARY"  />
+      <result column="balance"  property="balance"  jdbcType="BIGINT"  />
+      <result column="create_time"  property="createTime"  jdbcType="TIMESTAMP"  />
+      <result column="modify_time"  property="modifyTime"  jdbcType="TIMESTAMP"  />
+  </resultMap>
+
+  <sql id="baseColumns">
+      id,
+      user_id,
+      balance_date,
+      income,
+      expense,
+      balance,
+      create_time,
+      modify_time
+  </sql>
+
+  <insert id="insert" parameterType="com.tnp.bill.dao.model.BillSummary">
+      insert into tnp_bill_summary  (<include refid="baseColumns"/>) values
+(#{id,jdbcType=VARCHAR},#{userId,jdbcType=VARCHAR},#{balanceDate,jdbcType=VARCHAR},#{income,jdbcType=BIGINT},#{expense,jdbcType=BINARY},#{balance,jdbcType=BIGINT},sysdate(),sysdate())
+  </insert>
+
+  <select id="listByCondition" resultMap="BaseResultMap" parameterType="com.tnp.bill.dao.model.BillSummary">
+      select   <include refid="baseColumns"/> 
+   from tnp_bill_summary where 1=1
+      <if test="id != null">
+  and   id = #{id,jdbcType=VARCHAR}
+      </if>
+      <if test="userId != null">
+  and   user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+      <if test="balanceDate != null">
+  and   balance_date = #{balanceDate,jdbcType=VARCHAR}
+      </if>
+      <if test="income != null">
+  and   income = #{income,jdbcType=BIGINT}
+      </if>
+      <if test="expense != null">
+  and   expense = #{expense,jdbcType=BINARY}
+      </if>
+      <if test="balance != null">
+  and   balance = #{balance,jdbcType=BIGINT}
+      </if>
+      <if test="createTime != null">
+  and   create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="modifyTime != null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+  </select>
+
+  <select id="pageByCondition" resultMap="BaseResultMap" parameterType="com.tnp.bill.service.request.BillSummaryWhereDTO">
+  select <include refid="baseColumns"/> 
+   from tnp_bill_summary where 1=1
+      <if test="startDate != null" >
+     and <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+    and  <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+      <if test="id!= null">
+  and   id = #{id,jdbcType=VARCHAR}
+       </if>
+      <if test="userId!= null">
+  and   user_id = #{userId,jdbcType=VARCHAR}
+       </if>
+      <if test="balanceDate!= null">
+  and   balance_date = #{balanceDate,jdbcType=VARCHAR}
+       </if>
+      <if test="income!= null">
+  and   income = #{income,jdbcType=BIGINT}
+       </if>
+      <if test="expense!= null">
+  and   expense = #{expense,jdbcType=BINARY}
+       </if>
+      <if test="balance!= null">
+  and   balance = #{balance,jdbcType=BIGINT}
+       </if>
+      <if test="modifyTime!= null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+       </if>
+   limit #{offset}, #{limit} 
+  </select>
+
+  <select id="countByCondition" resultType="int" parameterType="com.tnp.bill.service.request.BillSummaryWhereDTO">
+         select count(1)  from tnp_bill_summary where 1=1
+      <if test="startDate != null" >
+   and   <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+  and    <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+     <if test="id != null">
+   and  id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="userId != null">
+   and  user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+     <if test="balanceDate != null">
+   and  balance_date = #{balanceDate,jdbcType=VARCHAR}
+      </if>
+     <if test="income != null">
+   and  income = #{income,jdbcType=BIGINT}
+      </if>
+     <if test="expense != null">
+   and  expense = #{expense,jdbcType=BINARY}
+      </if>
+     <if test="balance != null">
+   and  balance = #{balance,jdbcType=BIGINT}
+      </if>
+     <if test="modifyTime != null">
+   and  modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+  </select>
+
+  <update id="updateByUserIdAndBalanceDate" parameterType="com.tnp.bill.dao.model.BillSummary">
+      update tnp_bill_summary  set 
+      modify_time = sysdate()
+     <if test="id != null">
+         ,id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="userId != null">
+         ,user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+     <if test="balanceDate != null">
+         ,balance_date = #{balanceDate,jdbcType=VARCHAR}
+      </if>
+     <if test="income != null">
+         ,income = #{income,jdbcType=BIGINT}
+      </if>
+     <if test="expense != null">
+         ,expense = #{expense,jdbcType=BINARY}
+      </if>
+     <if test="balance != null">
+         ,balance = #{balance,jdbcType=BIGINT}
+      </if>
+     <if test="createTime != null">
+         ,create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      where user_id = #{userId,jdbcType=VARCHAR}  and balance_date = #{balanceDate,jdbcType=VARCHAR}
+    </update>
+
+  <update id="updateById" parameterType="com.tnp.bill.dao.model.BillSummary">
+      update tnp_bill_summary  set 
+      modify_time = sysdate()
+     <if test="id != null">
+         ,id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="userId != null">
+         ,user_id = #{userId,jdbcType=VARCHAR}
+      </if>
+     <if test="balanceDate != null">
+         ,balance_date = #{balanceDate,jdbcType=VARCHAR}
+      </if>
+     <if test="income != null">
+         ,income = #{income,jdbcType=BIGINT}
+      </if>
+     <if test="expense != null">
+         ,expense = #{expense,jdbcType=BINARY}
+      </if>
+     <if test="balance != null">
+         ,balance = #{balance,jdbcType=BIGINT}
+      </if>
+     <if test="createTime != null">
+         ,create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      where id = #{id,jdbcType=VARCHAR}
+    </update>
+
+  <delete id="deleteByUserIdAndBalanceDate" parameterType="com.tnp.bill.dao.model.BillSummary">
+      delete from tnp_bill_summary
+      where user_id = #{userId,jdbcType=VARCHAR}  and balance_date = #{balanceDate,jdbcType=VARCHAR}  
+  </delete>
+
+  <delete id="deleteById" parameterType="com.tnp.bill.dao.model.BillSummary">
+      delete from tnp_bill_summary
+      where id = #{id,jdbcType=VARCHAR}  
+  </delete>
+
+  <select id="queryByUserIdAndBalanceDate" resultMap="BaseResultMap" parameterType="com.tnp.bill.dao.model.BillSummary">
+      select   <include refid="baseColumns"/> from
+     tnp_bill_summary
+      where user_id = #{userId,jdbcType=VARCHAR}  and balance_date = #{balanceDate,jdbcType=VARCHAR}  
+  </select>
+
+  <select id="queryById" resultMap="BaseResultMap" parameterType="com.tnp.bill.dao.model.BillSummary">
+      select   <include refid="baseColumns"/> from
+     tnp_bill_summary
+      where id = #{id,jdbcType=VARCHAR}  
+  </select>
+
+</mapper>

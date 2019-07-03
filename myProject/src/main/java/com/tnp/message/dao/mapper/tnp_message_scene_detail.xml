@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tnp.message.dao.mapper.MessageSceneDetailMapper">
+  <resultMap id="BaseResultMap" type="com.tnp.message.dao.model.MessageSceneDetail">
+      <result column="id"  property="id"  jdbcType="VARCHAR"  />
+      <result column="scene_id"  property="sceneId"  jdbcType="VARCHAR"  />
+      <result column="message_template_id"  property="messageTemplateId"  jdbcType="VARCHAR"  />
+      <result column="create_time"  property="createTime"  jdbcType="TIMESTAMP"  />
+      <result column="modify_time"  property="modifyTime"  jdbcType="TIMESTAMP"  />
+      <result column="delete_flag"  property="deleteFlag"  jdbcType="VARCHAR"  />
+  </resultMap>
+
+  <sql id="baseColumns">
+      id,
+      scene_id,
+      message_template_id,
+      create_time,
+      modify_time,
+      delete_flag
+  </sql>
+
+  <insert id="insert" parameterType="com.tnp.message.dao.model.MessageSceneDetail">
+      insert into tnp_message_scene_detail  (<include refid="baseColumns"/>) values
+(#{id,jdbcType=VARCHAR},#{sceneId,jdbcType=VARCHAR},#{messageTemplateId,jdbcType=VARCHAR},sysdate(),sysdate(),#{deleteFlag,jdbcType=VARCHAR})
+  </insert>
+
+  <select id="listByCondition" resultMap="BaseResultMap" parameterType="com.tnp.message.dao.model.MessageSceneDetail">
+      select   <include refid="baseColumns"/> 
+   from tnp_message_scene_detail where 1=1
+      <if test="id != null">
+  and   id = #{id,jdbcType=VARCHAR}
+      </if>
+      <if test="sceneId != null">
+  and   scene_id = #{sceneId,jdbcType=VARCHAR}
+      </if>
+      <if test="messageTemplateId != null">
+  and   message_template_id = #{messageTemplateId,jdbcType=VARCHAR}
+      </if>
+      <if test="createTime != null">
+  and   create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="modifyTime != null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="deleteFlag != null">
+  and   delete_flag = #{deleteFlag,jdbcType=VARCHAR}
+      </if>
+  </select>
+
+  <select id="pageByCondition" resultMap="BaseResultMap" parameterType="com.tnp.message.service.request.MessageSceneDetailWhereDTO">
+  select <include refid="baseColumns"/> 
+   from tnp_message_scene_detail where 1=1
+      <if test="startDate != null" >
+     and <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+    and  <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+      <if test="id!= null">
+  and   id = #{id,jdbcType=VARCHAR}
+       </if>
+      <if test="sceneId!= null">
+  and   scene_id = #{sceneId,jdbcType=VARCHAR}
+       </if>
+      <if test="messageTemplateId!= null">
+  and   message_template_id = #{messageTemplateId,jdbcType=VARCHAR}
+       </if>
+      <if test="modifyTime!= null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+       </if>
+      <if test="deleteFlag!= null">
+  and   delete_flag = #{deleteFlag,jdbcType=VARCHAR}
+       </if>
+   limit #{offset}, #{limit} 
+  </select>
+
+  <select id="countByCondition" resultType="int" parameterType="com.tnp.message.service.request.MessageSceneDetailWhereDTO">
+         select count(1)  from tnp_message_scene_detail where 1=1
+      <if test="startDate != null" >
+   and   <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+  and    <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+     <if test="id != null">
+   and  id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="sceneId != null">
+   and  scene_id = #{sceneId,jdbcType=VARCHAR}
+      </if>
+     <if test="messageTemplateId != null">
+   and  message_template_id = #{messageTemplateId,jdbcType=VARCHAR}
+      </if>
+     <if test="modifyTime != null">
+   and  modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="deleteFlag != null">
+   and  delete_flag = #{deleteFlag,jdbcType=VARCHAR}
+      </if>
+  </select>
+
+  <update id="updateByIdAndId" parameterType="com.tnp.message.dao.model.MessageSceneDetail">
+      update tnp_message_scene_detail  set 
+      modify_time = sysdate()
+     <if test="id != null">
+         ,id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="sceneId != null">
+         ,scene_id = #{sceneId,jdbcType=VARCHAR}
+      </if>
+     <if test="messageTemplateId != null">
+         ,message_template_id = #{messageTemplateId,jdbcType=VARCHAR}
+      </if>
+     <if test="createTime != null">
+         ,create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="deleteFlag != null">
+         ,delete_flag = #{deleteFlag,jdbcType=VARCHAR}
+      </if>
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}
+    </update>
+
+  <delete id="deleteByIdAndId" parameterType="com.tnp.message.dao.model.MessageSceneDetail">
+      delete from tnp_message_scene_detail
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}  
+  </delete>
+
+  <select id="queryByIdAndId" resultMap="BaseResultMap" parameterType="com.tnp.message.dao.model.MessageSceneDetail">
+      select   <include refid="baseColumns"/> from
+     tnp_message_scene_detail
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}  
+  </select>
+
+</mapper>

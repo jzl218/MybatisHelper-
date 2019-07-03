@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b54aa28e-99e2-47af-8f07-91a1b064ff74" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ibatishelper$BootStrap.coverage" NAME="BootStrap Coverage Results" MODIFIED="1541136358351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lianlianpay.ibatis.helper.bootstrap.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/BeanContainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/ibatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/mapper/BillSummaryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-207" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/mapper/tnp_bill_summary.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageRuleMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageTemplateMapper.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/tnp_message_rule.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageUserMsgMapper.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/model/BillSummary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-368">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/model/BillSummaryWhereDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1428">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sqlHead</find>
+      <find>not</find>
+      <find>resultClass</find>
+      <find>sysdate</find>
+      <find>countByCondition</find>
+      <find>pageByCondition</find>
+      <find>sqlTypeAlias</find>
+      <find>tableConfiguration.getDomainObjectName()</find>
+      <find>sqlContrainUpdate</find>
+      <find>update</find>
+      <find>valueOf</find>
+      <find>MODIFY_TIME</find>
+      <find>limit</find>
+      <find>tnp_refund_arbitration</find>
+      <find>m</find>
+      <find>my</find>
+      <find>mys</find>
+      <find>mysq</find>
+      <find>mysql</find>
+      <find>oral</find>
+      <find>o</find>
+      <find>or</find>
+      <find>ora</find>
+      <find>orac</find>
+      <find>oracl</find>
+      <find>oracle</find>
+      <find>\</find>
+      <find>WhereDto</find>
+      <find>tnp_logistics_package_info</find>
+      <find>config</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>parameterType</replace>
+      <replace>getJavaDomainPath(ibatorConfiguration, tableConfiguration)</replace>
+      <replace>WhereDTO</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\ideaProject\myibatisHelper\src\com\lianlianpay\ibatis\helper\core\template</dir>
+      <dir>D:\ideaProject\myibatisHelper</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/resources/ibatorConfig.xml" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/com/lianlianpay/gfx/atomic/rate/sqlmap/GFX_FX_RATE_REAL_TIME.xml" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/com/lianlianpay/cb/va/credit/services/Ddal/CbVaCreditOrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/bootstrap/BootStrap.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/utils/LoadJarUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/column/ColumnQueryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/myProject/src/main/java/com/tnp/trader/center/core/provider/dao/mapper/tnp_order_goodssnaps.xml" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/DaoTemplateCreateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/DaoTemplateRealizationCreateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/PageSeachTemplateCreateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/works/sqlmap/SqlmapProducer.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/WhereDtoGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/IbatorConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/ConfigLoader.java" />
+        <option value="$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/works/sqlmap/SqlBaseWorker.java" />
+        <option value="$PROJECT_DIR$/src/resources/ibatorConfig.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="myibatishelper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-2" />
+    <option name="y" value="1" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="bill" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tnp" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ibatishelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myibatisHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557823734663" />
+    <property name="last_opened_file_path" value="D:/workpro" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15459883" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lianlianpay.ibatis.helper.config.domain" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\myibatisHelper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lianlianpay.ibatis.helper.bootstrap.BootStrap" />
+      <module name="ibatishelper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lianlianpay.ibatis.helper.bootstrap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BootStrap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\jinzl\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b54aa28e-99e2-47af-8f07-91a1b064ff74" name="Default" comment="" />
+      <created>1530091141361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530091141361</updated>
+      <workItem from="1530091143042" duration="12983000" />
+      <workItem from="1530269366009" duration="13720000" />
+      <workItem from="1530668595948" duration="6502000" />
+      <workItem from="1530793352330" duration="211000" />
+      <workItem from="1530843271813" duration="4338000" />
+      <workItem from="1531119559171" duration="650000" />
+      <workItem from="1531122091271" duration="257000" />
+      <workItem from="1531125568648" duration="521000" />
+      <workItem from="1531128613074" duration="634000" />
+      <workItem from="1531129864996" duration="302000" />
+      <workItem from="1531130939337" duration="2787000" />
+      <workItem from="1531811713702" duration="1000" />
+      <workItem from="1531811948924" duration="1930000" />
+      <workItem from="1532951242538" duration="1280000" />
+      <workItem from="1533127185600" duration="3061000" />
+      <workItem from="1533374524122" duration="1540000" />
+      <workItem from="1533454556088" duration="732000" />
+      <workItem from="1533871647210" duration="3756000" />
+      <workItem from="1535611553486" duration="1538000" />
+      <workItem from="1535632023072" duration="4584000" />
+      <workItem from="1536029234221" duration="3438000" />
+      <workItem from="1536824150614" duration="2948000" />
+      <workItem from="1537113728913" duration="1385000" />
+      <workItem from="1537873142517" duration="5509000" />
+      <workItem from="1540015873390" duration="480000" />
+      <workItem from="1540016754808" duration="17329000" />
+      <workItem from="1541036543789" duration="577000" />
+      <workItem from="1541061093079" duration="3262000" />
+      <workItem from="1541157221275" duration="4724000" />
+      <workItem from="1541489563183" duration="609000" />
+      <workItem from="1541556219690" duration="3200000" />
+      <workItem from="1541731765514" duration="6796000" />
+      <workItem from="1541996952337" duration="3506000" />
+      <workItem from="1542256546889" duration="1903000" />
+      <workItem from="1542779613849" duration="712000" />
+      <workItem from="1544607101602" duration="2107000" />
+      <workItem from="1545743651237" duration="5065000" />
+      <workItem from="1545883608259" duration="3403000" />
+      <workItem from="1545966559582" duration="1369000" />
+      <workItem from="1546067431367" duration="761000" />
+      <workItem from="1546236907093" duration="710000" />
+      <workItem from="1546324677050" duration="6858000" />
+      <workItem from="1546484995913" duration="1169000" />
+      <workItem from="1546504958562" duration="9000" />
+      <workItem from="1546517922110" duration="755000" />
+      <workItem from="1547533676996" duration="2276000" />
+      <workItem from="1548661522953" duration="41000" />
+      <workItem from="1552306812197" duration="1826000" />
+      <workItem from="1553830675582" duration="5472000" />
+      <workItem from="1555942149626" duration="1098000" />
+      <workItem from="1556020695007" duration="1232000" />
+      <workItem from="1556260228100" duration="1098000" />
+      <workItem from="1556263325832" duration="1272000" />
+      <workItem from="1557801064071" duration="3541000" />
+      <workItem from="1561622410120" duration="2036000" />
+      <workItem from="1561685487352" duration="5214000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="165017000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19969743" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Nl-Palette" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0681431" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.24377032" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.051107325" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.40303358" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" visible="true" weight="0.024520256" />
+      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.18456884" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="营销系统网关" />
+    <MESSAGE value="营销系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="营销系统" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/works/sqlmap/SqlmapProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/works/sqlmap/SqlBaseWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/utils/DbUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/LogisticsAccountConfigMapper.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/tnp_logistics_credit_change_log.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/tnp_logistics_order.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/tnp_apply_flow.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/ApplyFlowMapper.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/model/LogisticsCreditAccountWhereDTO.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/model/LogisticsCreditAccount.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/tnp_logistics_credit_account.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/LogisticsCreditRepaymentRecordMapper.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/tnp_logistics_credit_repayment_record.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/logistics/service/dao/mapper/tnp_logistics_credit_bill.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/trade/center/core/provider/dao/model/WithdrawalOrder.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/trade/center/core/provider/dao/mapper/WithdrawalOrderMapper.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/trade/center/core/provider/dao/mapper/tnp_order_offer_detail.xml" />
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/template/DaoTemplateCreateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="103" column="78" selection-start-line="103" selection-start-column="78" selection-end-line="103" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/trade/center/core/provider/dao/mapper/ActivityReceiveRewardMapper.java" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/trade/center/core/provider/dao/mapper/tnp_activity_receive_reward.xml" />
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/model/MessageUserMsg.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ibatishelper.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/config/com.lianlianpay.ibatis.helper.core.template.PageSeachTemplateCreateService">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/IbatorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="106" column="58" selection-start-line="106" selection-start-column="58" selection-end-line="106" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/JdbcConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/SqlMapGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/TableConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/domain/WhereDtoGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/config/ConfigLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="78" column="59" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/constant/TradeTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/constraint/BaseContraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/config/com.lianlianpay.ibatis.helper.core.template.DaoTemplateRealizationCreateService">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/config/com.lianlianpay.ibatis.helper.core.template.DomainTemplateCreateService">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/config/com.lianlianpay.ibatis.helper.core.template.SqlmapTemplateCreateService">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/config/com.lianlianpay.ibatis.helper.core.column.ColumnQueryService">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/bootstrap/BootStrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/model/MessageSceneDetail.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/model/MessageSceneWhereDTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageTemplateDictionaryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lianlianpay/ibatis/helper/core/BeanContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/ibatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageTemplateMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/tnp_message_rule.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageUserMsgMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/message/dao/mapper/MessageRuleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/mapper/tnp_bill_summary.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/mapper/BillSummaryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/model/BillSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-368">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myProject/src/main/java/com/tnp/bill/dao/model/BillSummaryWhereDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ibatishelper:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (ibatishelper)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ibatishelper</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.oracle:ojdbc14:10.2.0.5.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

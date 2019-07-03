@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tnp.message.dao.mapper.MessageTemplateDictionaryMapper">
+  <resultMap id="BaseResultMap" type="com.tnp.message.dao.model.MessageTemplateDictionary">
+      <result column="id"  property="id"  jdbcType="VARCHAR"  />
+      <result column="template_key"  property="templateKey"  jdbcType="VARCHAR"  />
+      <result column="template_chinese_key"  property="templateChineseKey"  jdbcType="VARCHAR"  />
+      <result column="memo"  property="memo"  jdbcType="VARCHAR"  />
+      <result column="create_time"  property="createTime"  jdbcType="TIMESTAMP"  />
+      <result column="modify_time"  property="modifyTime"  jdbcType="TIMESTAMP"  />
+      <result column="scene_type"  property="sceneType"  jdbcType="VARCHAR"  />
+  </resultMap>
+
+  <sql id="baseColumns">
+      id,
+      template_key,
+      template_chinese_key,
+      memo,
+      create_time,
+      modify_time,
+      scene_type
+  </sql>
+
+  <insert id="insert" parameterType="com.tnp.message.dao.model.MessageTemplateDictionary">
+      insert into tnp_message_template_dictionary  (<include refid="baseColumns"/>) values
+(#{id,jdbcType=VARCHAR},#{templateKey,jdbcType=VARCHAR},#{templateChineseKey,jdbcType=VARCHAR},#{memo,jdbcType=VARCHAR},sysdate(),sysdate(),#{sceneType,jdbcType=VARCHAR})
+  </insert>
+
+  <select id="listByCondition" resultMap="BaseResultMap" parameterType="com.tnp.message.dao.model.MessageTemplateDictionary">
+      select   <include refid="baseColumns"/> 
+   from tnp_message_template_dictionary where 1=1
+      <if test="id != null">
+  and   id = #{id,jdbcType=VARCHAR}
+      </if>
+      <if test="templateKey != null">
+  and   template_key = #{templateKey,jdbcType=VARCHAR}
+      </if>
+      <if test="templateChineseKey != null">
+  and   template_chinese_key = #{templateChineseKey,jdbcType=VARCHAR}
+      </if>
+      <if test="memo != null">
+  and   memo = #{memo,jdbcType=VARCHAR}
+      </if>
+      <if test="createTime != null">
+  and   create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="modifyTime != null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="sceneType != null">
+  and   scene_type = #{sceneType,jdbcType=VARCHAR}
+      </if>
+  </select>
+
+  <select id="pageByCondition" resultMap="BaseResultMap" parameterType="com.tnp.message.service.request.MessageTemplateDictionaryWhereDTO">
+  select <include refid="baseColumns"/> 
+   from tnp_message_template_dictionary where 1=1
+      <if test="startDate != null" >
+     and <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+    and  <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+      <if test="id!= null">
+  and   id = #{id,jdbcType=VARCHAR}
+       </if>
+      <if test="templateKey!= null">
+  and   template_key = #{templateKey,jdbcType=VARCHAR}
+       </if>
+      <if test="templateChineseKey!= null">
+  and   template_chinese_key = #{templateChineseKey,jdbcType=VARCHAR}
+       </if>
+      <if test="memo!= null">
+  and   memo = #{memo,jdbcType=VARCHAR}
+       </if>
+      <if test="modifyTime!= null">
+  and   modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+       </if>
+      <if test="sceneType!= null">
+  and   scene_type = #{sceneType,jdbcType=VARCHAR}
+       </if>
+   limit #{offset}, #{limit} 
+  </select>
+
+  <select id="countByCondition" resultType="int" parameterType="com.tnp.message.service.request.MessageTemplateDictionaryWhereDTO">
+         select count(1)  from tnp_message_template_dictionary where 1=1
+      <if test="startDate != null" >
+   and   <![CDATA[create_time >= #{startDate,jdbcType=TIMESTAMP} ]]>
+      </if>
+      <if test="endDate != null" >
+  and    <![CDATA[create_time < date_add(#{endDate,jdbcType=TIMESTAMP}, interval 1 day)  ]]>
+      </if>
+     <if test="id != null">
+   and  id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="templateKey != null">
+   and  template_key = #{templateKey,jdbcType=VARCHAR}
+      </if>
+     <if test="templateChineseKey != null">
+   and  template_chinese_key = #{templateChineseKey,jdbcType=VARCHAR}
+      </if>
+     <if test="memo != null">
+   and  memo = #{memo,jdbcType=VARCHAR}
+      </if>
+     <if test="modifyTime != null">
+   and  modify_time = #{modifyTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="sceneType != null">
+   and  scene_type = #{sceneType,jdbcType=VARCHAR}
+      </if>
+  </select>
+
+  <update id="updateByIdAndId" parameterType="com.tnp.message.dao.model.MessageTemplateDictionary">
+      update tnp_message_template_dictionary  set 
+      modify_time = sysdate()
+     <if test="id != null">
+         ,id = #{id,jdbcType=VARCHAR}
+      </if>
+     <if test="templateKey != null">
+         ,template_key = #{templateKey,jdbcType=VARCHAR}
+      </if>
+     <if test="templateChineseKey != null">
+         ,template_chinese_key = #{templateChineseKey,jdbcType=VARCHAR}
+      </if>
+     <if test="memo != null">
+         ,memo = #{memo,jdbcType=VARCHAR}
+      </if>
+     <if test="createTime != null">
+         ,create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+     <if test="sceneType != null">
+         ,scene_type = #{sceneType,jdbcType=VARCHAR}
+      </if>
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}
+    </update>
+
+  <delete id="deleteByIdAndId" parameterType="com.tnp.message.dao.model.MessageTemplateDictionary">
+      delete from tnp_message_template_dictionary
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}  
+  </delete>
+
+  <select id="queryByIdAndId" resultMap="BaseResultMap" parameterType="com.tnp.message.dao.model.MessageTemplateDictionary">
+      select   <include refid="baseColumns"/> from
+     tnp_message_template_dictionary
+      where id = #{id,jdbcType=VARCHAR}  and id = #{id,jdbcType=VARCHAR}  
+  </select>
+
+</mapper>
